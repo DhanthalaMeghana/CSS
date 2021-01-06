@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Outlines</title>
+        <style>
+/*            For  required colour on any browser page go to the colour picker in the top tools of the browse,go to the req color n the page and get the req values.*/
+            .bluebox{
+                background-color: #1877F2;
+                color: white;
+                height: auto;
+                width:auto;
+                padding: 16px;
+                border: 10px #e83030 ridge;
+/*                Gives padding in all sides 16px*/
+                outline-style: solid;
+                outline-color: rgba( 68, 197, 21, 0.514 );
+                outline-width: thick;
+                
+            }
+            /* For color picker go to googlee and find */
+            .yellowbox{
+                background-color: rgb(222,224,85);
+                height: auto;
+                width: auto;
+                padding: 10px 5px 7px 3em;
+/*                Gives padding of 10px at top,5px on right,7px at bottom and 3em at left*/
+                border-width: 10px;
+                border-color: beige;
+                border-style: ridge;
+                outline-style: solid;
+                outline-color: rgba( 8, 16, 170, 0.514 );
+                outline-width: medium;
+
+            }
+            /* Also you can press Ctrl+Alt+k at color field in brackets itsef,where you get the color picker :) */
+            .greenbox{
+                 background-color: #46bc0f;
+                height: auto;
+                width: auto;
+                padding: 40px 10px;
+/*                Gives a padding of 40 px on top and bottom and 10px on left and right*/
+                border-width: 10px 15px;
+                border-color: hotpink;
+                border-style: ridge;
+                border-radius: 40px;
+                 outline-style: solid;
+                outline-color: #580808;
+                outline-width: medium;
+                
+            }
+/*            NOW AFTER PADDING NEW SIZE OF DIV WILL BE ORIGINAL SIZE +PADDING*/
+/*            CONVERTING DIV TO CIRCLE*/
+            .circle{
+                background-color: #861eb2;
+                padding:50px;
+                height: 100px;
+                width: 100px;
+                border-width: 10px;
+                border-color: #eb4913;
+                border-style: double;
+                border-radius: 150px;
+                
+            }
+            
+            P{
+                margin: 0;
+                background-color: #8bbbbf;
+            }
+            
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="bluebox">
+            <!--If we want to style only the word "great" in the line "Facebook is great." we use span! Keep that word inside span and give styling to the span-->
+            <p>Facebook</p>
+        </div>
+        <br>
+        <div class="yellowbox">
+            <p>Apple</p>
+        </div>
+        <br>
+        
+        <div class="greenbox">
+            <p>Microsoft</p>
+        </div>
+        <br>
+        <div class="circle">
+            <p>Circle</p>
+        </div>
+    </body>
+</html>

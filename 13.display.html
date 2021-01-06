@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFirstWebPage</title>
+        <style>
+/*            For  required colour on any browser page go to the colour picker in the top tools of the browse,go to the req color n the page and get the req values.*/
+            .bluebox{
+                background-color: #1877F2;
+                color: white;
+                height: 100px;
+                width:auto;
+                
+            }
+            /* For color picker go to googlee and find */
+            .yellowbox{
+                background-color: rgb(222,224,85);
+                height: 100px;
+                width: auto;
+                visibility: hidden;
+/*                Using hidden in visibility we cannot see the element on webpage but still the space for it is preserved*/
+                
+            }
+            /* Also you can press Ctrl+Alt+k at color field in brackets itsef,where you get the color picker :) */
+            .greenbox{
+                 background-color: #46bc0f;
+                height: 100px;
+                width: auto;
+                display: none;
+/*                Using display none, the space is also deleted,now it will be as if this element is not at all there!*/
+            }
+            .great{
+                background-color: #9d0535;
+                display: block;
+/*                We can also use display to convert inline elements to block elements and vice-versa*/
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="bluebox">
+            <!--If we want to style only the word "great" in the line "Facebook is great." we use span! Keep that word inside span and give styling to the span-->
+            <p>Facebook is <span class="great">great</span>.</p>
+        </div>
+        <div class="yellowbox">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        </div>
+        <h1>Yes!</h1>
+    </body>
+</html>

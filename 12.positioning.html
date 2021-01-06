@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>positioning</title>
+<!--
+        In positioning static is default that is same as when we dont apply any positioning as per the flow of webpage.In fixed,we decide flow now without considering that element that is ignoring it.we can give parameters like top 30ppx means it is 30px away frm top of webpage.
+        In relative,top and bottom given,these measurements will be taken fron it nrml position without positioning.
+        Absolute position means that we r positioning the element relative to the first parents that is non-static and if we are not having parent then position is relaive to html elements.
+        Now, to decide how elements show on top of the other,we use z-index property.
+An element with greater stack order is always in front of an element with a lower stack order.
+        If we donot give this,the last occuring html element will show up.
+        If for any element.positioning is not given,then it will be below all.
+-->
+        <style>
+/*            For  required colour on any browser page go to the colour picker in the top tools of the browse,go to the req color n the page and get the req values.*/
+            .bluebox{
+                background-color: #1877F2;
+                color: white;
+                height: 100px;
+                width:auto;
+                position: fixed;
+                top: 30px;
+                left: 30px;
+                z-index: 1;
+                
+            }
+            /* For color picker go to googlee and find */
+            .yellowbox{
+                background-color: rgb(222,224,85);
+                height: 100px;
+                width: auto;
+                position: relative;
+                top: 20px;
+                left: 20px;
+                z-index: 2;
+                
+
+            }
+            /* Also you can press Ctrl+Alt+k at color field in brackets itsef,where you get the color picker :) */
+            .greenbox{
+                 background-color: #46bc0f;
+                height: 100px;
+                width: auto;
+                position: absolute;
+                top: 10px;
+                left: 100px;
+            }
+            .great{
+                background-color: #9d0535
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="bluebox">
+            <!--If we want to style only the word "great" in the line "Facebook is great." we use span! Keep that word inside span and give styling to the span-->
+            <p>Facebook is <span class="great">great</span>.</p>
+        </div>
+        <div class="yellowbox">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        </div>
+    </body>
+</html>

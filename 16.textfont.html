@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFirstWebPage</title>
+        <style>
+/*            For  required colour on any browser page go to the colour picker in the top tools of the browse,go to the req color n the page and get the req values.*/
+            .bluebox{
+                background-color: #1877F2;
+                color: white;
+                height: 100px;
+                width:auto;
+                font-size: 100px;
+                font-family: sans-serif;
+/*                sans serif doesnt have lines at end of letters like serif*/
+                
+            }
+            /* For color picker go to googlee and find */
+            .yellowbox{
+                background-color: rgb(222,224,85);
+                height: 150px;
+                width: auto;
+                font-size: 100px;
+                font-family: "Times New Roman",Times,serif;
+/*                serif has lines at the end(edges) of letters*/
+/*                We can also give many font families,it will try one by one,if it doesnt work it goes to next font family,like this the nearest possible font family is assigned."Times New Roman" is written in colons because this font family has more than one word,so we put these in double colons.*/
+            }
+            /* Also you can press Ctrl+Alt+k at color field in brackets itsef,where you get the color picker :) */
+            .greenbox{
+                 background-color: #46bc0f;
+                height: 100px;
+                width: auto;
+                font-size: 100px;
+                font-family: monospace;
+/*                In monospace all characters have same width*/
+            }
+            .great{
+                background-color: #9d0535
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="bluebox">
+            <!--If we want to style only the word "great" in the line "Facebook is great." we use span! Keep that word inside span and give styling to the span-->
+            <p>Facebook</p>
+        </div>
+        <div class="yellowbox">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        </div>
+    </body>
+</html>
